@@ -1,7 +1,7 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter } from "react-router-dom";
-import { globalStyles } from "@/styles/stitches.config";
-import AppRouter from "@/page/AppRouter";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { BrowserRouter } from 'react-router-dom';
+import { globalStyles } from '@/styles/stitches.config';
+import AppRouter from '@/components/pages/AppRouter';
 
 // stitches 설정
 globalStyles();

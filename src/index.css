@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #fff;
+    font-family: 'Pretendard-Regular, sans-serif';
+  }
+
+  /* 폰트 설정 */
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  }
+}

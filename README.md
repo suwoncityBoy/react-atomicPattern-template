@@ -10,5 +10,5 @@ react-router-dom : 6
 tailwindcss + cva : 3.4.17  
 zustand : 4  
 tanstack/react-query : 5  
-axios  
-yup + formik
+axios : 1.7.7  
+react hook form + zod

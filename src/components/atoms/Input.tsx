@@ -1,6 +1,10 @@
 import React from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
 
+export interface InputProps
+  extends React.InputHTMLAttributes<HTMLInputElement>,
+    VariantProps<typeof inputVariants> {}
+
 // 인풋 변수들
 const inputVariants = cva(
   // 기본 스타일
@@ -8,7 +12,7 @@ const inputVariants = cva(
   {
     variants: {
       auth: {
-        true: 'py-[15px] px-[20px]',
+        true: 'py-[15px] px-[20px] border-[1px] border-gray-300',
       },
       search: {
         true: 'py-[15px] px-[20px] rounded-[4px]',
@@ -17,14 +21,18 @@ const inputVariants = cva(
   }
 );
 
-export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement>,
-    VariantProps<typeof inputVariants> {}
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ auth, search, className, ...props }, ref) => {
+    return (
+      <input
+        ref={ref}
+        className={inputVariants({ auth, search, className })}
+        {...props}
+      />
+    );
+  }
+);
 
-export function Input({ auth, search, className, ...props }: InputProps) {
-  return (
-    <input className={inputVariants({ auth, search, className })} {...props} />
-  );
-}
+Input.displayName = 'Input';
 
 export default Input;

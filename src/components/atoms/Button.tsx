@@ -1,6 +1,7 @@
 // src/components/atoms/Button.tsx
 import React from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
+import { twMerge } from 'tailwind-merge';
 
 const buttonVariants = cva('cursor-pointer py-0 px-[20px] rounded-[8px]', {
   variants: {
@@ -29,12 +30,14 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={buttonVariants({
-        orangeBtn,
-        darkGrayBtn,
-        borderBtn,
-        className,
-      })}
+      className={twMerge(
+        buttonVariants({
+          orangeBtn,
+          darkGrayBtn,
+          borderBtn,
+          className,
+        })
+      )}
       {...props}
     />
   );

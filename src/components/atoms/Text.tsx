@@ -1,4 +1,5 @@
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 import { cva, VariantProps } from 'class-variance-authority';
 
 // 텍스트 변수들
@@ -24,7 +25,7 @@ export interface TextProps
 
 function Text({ weight, className, children, ...props }: TextProps) {
   return (
-    <span className={textVariants({ weight, className })} {...props}>
+    <span className={twMerge(textVariants({ weight, className }))} {...props}>
       {children}
     </span>
   );

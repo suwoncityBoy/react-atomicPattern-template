@@ -1,4 +1,5 @@
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 import { cva, VariantProps } from 'class-variance-authority';
 
 export interface InputProps
@@ -26,7 +27,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     return (
       <input
         ref={ref}
-        className={inputVariants({ auth, search, className })}
+        className={twMerge(inputVariants({ auth, search, className }))}
         {...props}
       />
     );

@@ -1,9 +1,12 @@
 import { DivProps } from '@/types/elementsProps';
+import { twMerge } from 'tailwind-merge';
 
 export function Column({ children, className = '', ...props }: DivProps) {
   return (
     <div
-      className={`relative flex flex-col flex-wrap justify-start items-start h-auto ${className}`}
+      className={twMerge(
+        `relative flex flex-col flex-wrap justify-start items-start ${className}`
+      )}
       {...props}
     >
       {children}

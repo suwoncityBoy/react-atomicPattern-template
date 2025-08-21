@@ -1,0 +1,30 @@
+################
+# Title - [:sparkles: Feat](띄어쓰기)<내용>
+
+# :sparkles: [ Feat ] 새로운 기능 추가/수정/삭제
+# :bulb: [ Update ] 기존 기능 추가/수정/삭제
+# :hammer_and_wrench: [ Fix ] 버그 수정
+
+# :hankey: [ Temp ] 임시 커밋 (삭제용)
+ 
+# :recycle: [ Refactor ] 코드 리팩토링
+# :hammer: [ Chore ] 의존성, 스크립트 등
+
+# :memo: [ Comment ] 주석 관련
+# :books: [ Docs ]  문서 수정
+# :gem: [ Style ] 코드 포맷 변경, 새미 콜론 누락 등
+
+# :heavy_plus_sign: [ Add ] 파일 추가
+# :fire: [ Remove ] 파일 삭제
+
+# :twisted_rightwards_arrows: [ Merge ] 병합
+
+################
+# 바로아래 공백 지우지 마세요
+
+################
+# Body - 줄바꿈 하고나서 "-" 기입하고 내용입력 (한 줄은 72자 이내)
+
+################
+# Footer - 현재 커밋과 관련된 이슈 번호 추가 등 ex) close #7 #8
+

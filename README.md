@@ -2,13 +2,13 @@
 
 ### spec
 
-pnpm : 9.15.0  
+pnpm : 10.15.0  
 ts : 5.2  
 vite : 5.2  
-react : 18.2  
-react-router-dom : 6  
-tailwindcss + cva + tailwind-merge : 3.4.17  
-zustand : 4  
+react : 19.1  
+react-router-dom : 7.8.1  
+tailwindcss + cva + tailwind-merge : ^4.1.12
+zustand : 5  
 tanstack/react-query : 5  
 axios : 1.7.7  
 react hook form + zod

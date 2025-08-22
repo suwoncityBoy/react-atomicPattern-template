@@ -4,7 +4,7 @@
 
 pnpm : 10.15.0  
 ts : 5.2  
-vite : 5.2  
+vite : 7.1  
 react : 19.1  
 react-router-dom : 7.8.1  
 tailwindcss + cva + tailwind-merge : ^4.1.12

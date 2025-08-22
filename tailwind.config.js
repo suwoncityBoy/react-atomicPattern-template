@@ -11,13 +11,15 @@ export default {
       },
       fontFamily: {
         'pretendard-regular': ['Pretendard-Regular', 'sans-serif'],
+        'pretendard-medium': ['Pretendard-Medium', 'sans-serif'],
+        'pretendard-semibold': ['Pretendard-SemiBold', 'sans-serif'],
         'pretendard-bold': ['Pretendard-Bold', 'sans-serif'],
       },
     },
     screens: {
-      fold: { raw: '(max-width: 280px)' },
-      mb: { raw: '(max-width: 600px)' },
-      tb: { raw: '(min-width: 601px) and (max-width: 1260px)' },
+      fold: { raw: '(max-width: 300px)' },
+      mb: { raw: '(min-width: 301px) and(max-width: 600px)' },
+      tb: { raw: '(min-width: 601px) and (max-width: 1024px)' },
     },
   },
   plugins: [],

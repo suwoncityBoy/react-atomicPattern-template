@@ -1,26 +1,56 @@
 @import 'tailwindcss';
 
-@layer base {
-  body {
-    background-color: #fff;
-    font-family: 'Pretendard-Regular, sans-serif';
-  }
+/* 디자인 @theme */
+@theme {
+  /* Colors */
+  --color-bg: #dfe6eb;
+  --color-gray-1: #747c87;
+  --color-gray-2: #fafbfc;
+  --color-gray-3: #dfe6eb;
+  --color-navy-1: #1e2939;
 
-  /* 폰트 설정 */
-  @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'Pretendard-Medium';
-    src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'Pretendard-SemiBold';
-    src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
-  }
-  @font-face {
-    font-family: 'Pretendard-Bold';
-    src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  --font-pretendard: 'Pretendard', sans-serif;
+
+  /* 반응형 브레이크포인트: min-width 기준 */
+  --breakpoint-fold: 18.75rem; /* 300px */
+  --breakpoint-mb: 37.5rem; /* 600px */
+  --breakpoint-tb: 64rem; /* 1024px */
+}
+
+/* 폰트 파일 연결 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 전역 기본값 */
+@layer base {
+  html,
+  body {
+    @apply font-pretendard text-black bg-white;
   }
 }
